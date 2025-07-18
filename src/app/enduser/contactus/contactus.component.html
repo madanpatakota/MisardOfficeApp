@@ -1,0 +1,99 @@
+<main id="main" class="contact-section">
+
+  <!-- ======= Breadcrumbs ======= -->
+  <section class="breadcrumbs" data-aos="fade-in">
+    <div class="container text-center">
+      <h2>Contact Us</h2>
+      <p class="lead">
+        Have questions, suggestions, or need support? We’re here to help — connect with us anytime...
+      </p>
+    </div>
+  </section>
+
+  <!-- ======= Contact Info Boxes ======= -->
+  <section class="container py-5">
+    <div class="row g-4">
+      <div class="col-lg-4 col-md-6" data-aos="fade-up">
+        <div class="info-box h-100 p-4 shadow-sm text-center rounded">
+          <i class="bi bi-geo-alt-fill fs-2 text-primary"></i>
+          <h5 class="mt-3">Our Address</h5>
+          <p class="text-muted mb-0">Ardente Office One, 2nd Building, 1st Floor, Misard Software Solutions,<br> Hoodi
+            Main Rd, Hoodi, Bangalore, 560048</p>
+        </div>
+      </div>
+      <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
+        <div class="info-box h-100 p-4 shadow-sm text-center rounded">
+          <i class="bi bi-envelope-fill fs-2 text-primary"></i>
+          <h5 class="mt-3">Email Us</h5>
+          <p class="text-muted mb-0">info&#64;misard.com<br>contact&#64;misard.com</p>
+        </div>
+      </div>
+      <div class="col-lg-4 col-md-12" data-aos="fade-up" data-aos-delay="200">
+        <div class="info-box h-100 p-4 shadow-sm text-center rounded">
+          <i class="bi bi-telephone-fill fs-2 text-primary"></i>
+          <h5 class="mt-3">Call Us</h5>
+          <p class="text-muted mb-0">+91-7204185064</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ======= Contact Form Section ======= -->
+  <section class="container mb-5" data-aos="fade-up">
+    <div class="row g-4 align-items-start">
+      <div class="col-lg-6">
+        <div class="info-box h-100 p-4 shadow-sm rounded">
+          <i class="bi bi-chat-dots-fill fs-2 text-primary"></i>
+          <h5 class="mt-3">Send Us a Message</h5>
+          <p class="text-muted">Have a query about training, deployment, openings, or internships?</p>
+          <p class="small">Prefer chatting? <a routerLink="/faqs" class="text-decoration-underline">Visit our FAQs</a>
+          </p>
+        </div>
+      </div>
+
+      <div class="col-lg-6">
+        <form (ngSubmit)="onSubmit()" #contactForm="ngForm" class="p-4 bg-white rounded shadow-sm">
+          <div class="mb-3">
+            <label for="name" class="form-label">Your Name <span class="text-danger">*</span></label>
+            <input type="text" id="name" name="name" class="form-control" ngModel required #name="ngModel">
+            <div *ngIf="name.invalid && name.touched" class="text-danger small">Name is required.</div>
+          </div>
+          <div class="mb-3">
+            <label for="email" class="form-label">Your Email <span class="text-danger">*</span></label>
+            <input type="email" id="email" name="email" class="form-control" ngModel required #email="ngModel">
+            <div *ngIf="email.invalid && email.touched" class="text-danger small">Valid email is required.</div>
+          </div>
+          <div class="mb-3">
+            <label for="subject" class="form-label">Subject <span class="text-danger">*</span></label>
+            <input type="text" id="subject" name="subject" class="form-control" ngModel required #subject="ngModel">
+            <div *ngIf="subject.invalid && subject.touched" class="text-danger small">Subject is required.</div>
+          </div>
+          <div class="mb-3">
+            <label for="message" class="form-label">Message <span class="text-danger">*</span></label>
+            <textarea id="message" name="message" class="form-control" rows="5" ngModel required
+              #message="ngModel"></textarea>
+            <div *ngIf="message.invalid && message.touched" class="text-danger small">Message is required.</div>
+          </div>
+          <div class="text-center">
+            <button class="btn btn-primary px-4 shadow-sm" type="submit" [disabled]="!contactForm.valid">Send
+              Message</button>
+          </div>
+          <div *ngIf="submitted" class="alert alert-success mt-4" role="alert">
+            ✅ Your message has been sent successfully!
+          </div>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- ======= Google Maps Section ======= -->
+  <section class="container mb-5">
+    <div class="rounded shadow-sm overflow-hidden" style="height: 400px;">
+      <iframe width="100%" height="100%" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false"
+        tabindex="0" loading="lazy" referrerpolicy="no-referrer-when-downgrade"
+        src="https://www.google.com/maps/embed/v1/place?key=AIzaSyBCkWwad9gwNCbnR6FI_0Gm5oG7ekRqMhA&q=Ardente+Office+One,Hoodi+Bangalore">
+      </iframe>
+    </div>
+  </section>
+
+</main>

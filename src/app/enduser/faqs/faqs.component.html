@@ -1,0 +1,52 @@
+<main id="main" class="faq-section">
+
+  <!-- ======= Breadcrumbs ======= -->
+  <div class="breadcrumbs" data-aos="fade-in">
+    <div class="container">
+      <h2>Frequently Asked Questions</h2>
+      <p>
+        Find answers to common questions about our services, training, projects, and collaboration opportunities.If you have
+        any other questions, feel free to reach out to us directly.We are here to help you with any inquiries you may have.Our
+        team is dedicated to providing you with the information you need to make informed decisions.
+      </p>
+    </div>
+  </div>
+
+  <!-- ======= FAQ Accordion Section ======= -->
+  <section class="container mb-5" data-aos="fade-up">
+    <div class="accordion" id="accordionExample">
+      <div class="accordion-item" *ngFor="let faq of faqs; let i = index">
+        <h2 class="accordion-header" [id]="'heading' + i">
+          <button class="accordion-button" type="button" [class.collapsed]="i !== 0" data-bs-toggle="collapse"
+            [attr.data-bs-target]="'#collapse' + i" [attr.aria-expanded]="i === 0 ? 'true' : 'false'"
+            [attr.aria-controls]="'collapse' + i">
+            <i class="bi bi-question-circle-fill me-2 text-info"></i> {{ faq.question }}
+          </button>
+        </h2>
+        <div [id]="'collapse' + i" class="accordion-collapse collapse" [ngClass]="{ show: i === 0 }"
+          [attr.aria-labelledby]="'heading' + i" data-bs-parent="#accordionExample">
+          <div class="accordion-body">
+            {{ faq.answer }}
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+
+</main>
+<!-- ======= Help CTA Section ======= -->
+<section class="help-cta text-white py-5" style="background-color: #144164;">
+  <div class="container text-center">
+    <h4 class="mb-3">Still Have Questions?</h4>
+    <p class="mb-4">
+      Want personal assistance? Curious about internships, training, or job opportunities?
+      <br />
+      We’re just a click away!
+    </p>
+    <a [routerLink]="'../../contactus'" class="btn btn-light px-4 py-2 rounded-pill fw-semibold">
+      Connect With Us
+    </a>
+  </div>
+</section>

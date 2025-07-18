@@ -1,0 +1,41 @@
+.training-program {
+  background-color: #f9f9f9;
+  padding: 40px 30px;
+  border-radius: 12px;
+}
+
+.training-program-section .breadcrumbs {
+  padding: 40px 20px;
+  border-radius: 8px;
+  background-color: #144164 !important;
+  color: white;
+}
+
+
+.training-program h2 {
+  font-weight: 700;
+  color: #144164 ;
+}
+
+.training-program p.lead {
+  color: #444;
+  font-size: 18px;
+  max-width: 720px;
+  margin: auto;
+}
+
+.training-program ul.list-group {
+  margin-top: 20px;
+}
+
+.training-program .list-group-item {
+  font-size: 16px;
+  font-weight: 500;
+  border: none;
+}
+
+.training-program .tech-line {
+  font-weight: 600;
+  font-size: 17px;
+  color: #333;
+}

@@ -1,0 +1,15 @@
+<div *ngIf="formStep === 1">
+    <h5>Let's Chat!</h5>
+    <form (ngSubmit)="onFormSubmit()" #chatForm="ngForm">
+        <input type="text" name="name" placeholder="Name" required />
+        <input type="email" name="email" placeholder="Email" required />
+        <textarea name="message" placeholder="Message"></textarea>
+        <button type="submit">Submit</button>
+    </form>
+</div>
+
+<div *ngIf="formStep === 2">
+    <p>8:20 PM</p>
+    <p>Leave us a message and we’ll reply as soon as we can.</p>
+    <input type="text" placeholder="Write your message..." />
+</div>

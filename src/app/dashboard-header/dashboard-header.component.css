@@ -1,0 +1,173 @@
+.hero-section {
+  padding: 60px 20px;
+  margin-top: 90px; /* ✅ Add space below navbar on desktop */
+}
+
+.hero-content {
+  max-width: 1140px;
+  margin: auto;
+}
+
+.text-content {
+  flex: 1;
+  padding: 20px;
+}
+
+.hero-image {
+  max-height: 500px;
+  border-radius: 12px;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.1);
+}
+
+.hero-title {
+  font-size: 26px;
+  font-weight: 700;
+  color: #144164;
+}
+
+.hero-sub {
+  font-size: 16px;
+  color: #555;
+  margin-top: 10px;
+  line-height: 1.6;
+}
+
+.btn-get-started {
+  margin-top: 20px;
+  padding: 10px 25px;
+  font-weight: 600;
+  border-radius: 30px;
+  border: 2px solid #144164;
+  color: #144164;
+  background: transparent;
+  transition: all 0.3s ease;
+}
+
+.btn-get-started:hover {
+  background-color: #144164;
+  color: white;
+}
+
+/* ✅ Mobile-specific adjustments */
+@media (max-width: 768px) {
+  .hero-section {
+    padding: 60px 20px 40px;
+    margin-top: 80px; /* ✅ Space below mobile navbar */
+  }
+  .about-section img {
+    margin-bottom: 20px; /* ✅ Adds breathing space below image */
+  }
+
+  .hero-image-mobile {
+    width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  object-fit: contain; /* ✅ shows full image without cropping */
+  background-color: #f9f9f9;
+  margin-right: 10px;
+  }
+
+  .hero-title {
+    font-size: 20px;
+  }
+
+  .hero-sub {
+    font-size: 15px;
+    padding: 0 10px;
+    text-align: left;
+  }
+
+  .btn-get-started {
+    margin: 20px auto;
+    display: inline-block;
+  }
+}
+
+/* === Animations for Hero Section === */
+
+/* Fade in from right */
+@keyframes fadeInRight {
+  from {
+    opacity: 0;
+    transform: translateX(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+/* Fade in from left */
+@keyframes fadeInLeft {
+  from {
+    opacity: 0;
+    transform: translateX(-30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+/* Bounce entry for image */
+@keyframes bounceIn {
+  0% {
+    opacity: 0;
+    transform: scale(0.8);
+  }
+  60% {
+    opacity: 1;
+    transform: scale(1.05);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+/* Slide up effect */
+@keyframes slideUp {
+  from {
+    opacity: 0;
+    transform: translateY(40px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Pulse on hover for button */
+@keyframes pulse {
+  0%, 100% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.05);
+  }
+}
+
+/* === Animation classes (you'll use these in your HTML) === */
+.animate-fade-right {
+  animation: fadeInRight 1s ease-out both;
+}
+
+.animate-fade-left {
+  animation: fadeInLeft 1s ease-out both;
+}
+
+.animate-bounce-in {
+  animation: bounceIn 1.2s ease-out both;
+}
+
+.animate-slide-up {
+  animation: slideUp 1s ease-out both;
+}
+
+.btn-get-started:hover {
+  animation: pulse 0.6s ease-in-out;
+  box-shadow: 0 0 12px rgba(20, 65, 100, 0.4);
+}
+
+.flip-image {
+  transform: scaleX(-1) !important;
+}

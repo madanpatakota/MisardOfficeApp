@@ -1,0 +1,139 @@
+/* Reviews & Highlights Section */
+.content-highlights h4 {
+  font-weight: 600;
+  color: #144164 ;
+}
+
+.rating-section {
+  font-size: 18px;
+  color: #444;
+}
+
+/* .rating-stars i {
+  font-size: 20px;
+  margin-right: 2px;
+} */
+
+.rating-text {
+  font-weight: 500;
+  margin-left: 8px;
+  color: #555;
+}
+
+.testimonial-box {
+  background-color: #f9f9f9;
+  border-left: 4px solid #144164 ;
+  font-size: 15px;
+}
+
+.testimonial-box i.bi-quote {
+  color: #144164 ;
+  margin-right: 6px;
+}
+
+/* Rating stars fix */
+.rating-stars i {
+  font-size: 16px; /* Reduced from 20px */
+  margin-right: 2px;
+}
+
+/* Quote icon inside testimonials */
+.testimonial-box i.bi-quote {
+  font-size: 14px; /* Reduced to make it subtle */
+  vertical-align: top;
+  color: #144164 ;
+  margin-right: 6px;
+}
+
+.blogs .card-img-top {
+  max-height: 80px;
+  max-width: 80px;
+  width: auto;
+  height: auto;
+  margin: 0 auto;
+  display: block;
+  object-fit: contain;
+}
+
+.card .card-img-top.p-4 {
+  padding-top: 1.5rem !important;
+  padding-bottom: 1rem !important;
+}
+
+.testimonial-box {
+  min-height: 140px;
+  transition: all 0.5s ease-in-out;
+  font-size: 15px;
+  border-left: 4px solid #144164 ;
+}
+
+.bi-quote {
+  color: #144164 ;
+  margin-right: 6px;
+}
+
+.blogs-section .breadcrumbs{
+  padding: 40px 20px;
+  border-radius: 8px;
+  background-color: #144164 !important;
+  color: white;
+
+}
+
+.blogs-section .card {
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+  border: none;
+  border-radius: 12px;
+}
+
+.blogs-section .card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 12px 28px rgba(0, 0, 0, 0.15);
+}
+
+.blogs-section .card img {
+  transition: transform 0.3s ease-in-out;
+  height: 96px;
+  width: 96px;
+}
+
+.blogs-section .card:hover img {
+  transform: scale(1.1);
+}
+
+.rating-stars i {
+  font-size: 1.25rem;
+  transition: transform 0.2s ease;
+}
+
+.rating-stars:hover i {
+  transform: scale(1.2);
+}
+
+.testimonial-box {
+  background: #ffffff;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.testimonial-box:hover {
+  transform: scale(1.02);
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.1);
+}
+
+.quote-open,
+.quote-close {
+  color: #144164;
+  font-size: 1.5rem;
+  vertical-align: middle;
+}
+
+.card {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+}
+
+

@@ -1,0 +1,42 @@
+.join-trainee-section .breadcrumbs {
+  padding: 40px 20px;
+  border-radius: 8px;
+  background-color: #144164 !important;
+  color: white;
+}
+
+.join-trainee-section .form-label {
+  font-weight: 500;
+  color: #333;
+}
+
+.join-trainee-section .card {
+  border: none;
+  background: #fff;
+  border-radius: 10px;
+}
+
+.join-trainee-section h3,
+.join-trainee-section h4 {
+  font-weight: 600;
+}
+
+/* Animate list-group items on hover */
+.list-group-item {
+  transition: all 0.3s ease;
+}
+
+.list-group-item:hover {
+  background-color: #f5faff;
+  transform: translateX(5px);
+}
+
+/* Subtle hover on submit button */
+.btn-primary {
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.btn-primary:hover {
+  background-color: #0b5ed7;
+  transform: scale(1.05);
+}

@@ -1,0 +1,91 @@
+<main id="main">
+    <!-- ======= Breadcrumbs ======= -->
+    <div class="breadcrumbs" data-aos="zoom-in">
+        <div class="container">
+            <h2>Current Openings</h2>
+            <p>
+                At <strong>Misard</strong>, we're not just offering jobs — we’re building careers.
+                Explore our open roles across development, testing, cloud, network, and leadership.
+                Be a part of a dynamic, growth-driven tech team.
+            </p>
+        </div>
+    </div>
+
+    <!-- ======= Careers Section ======= -->
+    <section id="careers" class="careers">
+        <div class="container">
+            <div class="section-title text-center" data-aos="fade-up">
+                <h2>Explore Exciting Opportunities</h2>
+                <p>Discover current job openings and take the next step in your career with us.</p>
+            </div>
+
+            <div class="row">
+                <div class="col-lg-6 mb-4">
+                    <div class="info-box" data-aos="fade-left">
+                        <i class="bx bx-briefcase"></i>
+                        <h3>Current Openings</h3>
+                        <p>Check out our latest job openings below:</p>
+                        <ul>
+                            <li>Software Engineer - Full Stack</li>
+                            <li>Database Designer</li>
+                            <li>Cloud Developer</li>
+                            <li>Product Manager</li>
+                            <li>Workday Engineer</li>
+                            <li>Manual Tester</li>
+                        </ul>
+                        <p>We are always looking for talented individuals. Apply now and join our innovative projects!
+                        </p>
+                    </div>
+                </div>
+
+                <div class="col-lg-6 mb-4">
+                    <div class="info-box" data-aos="fade-right">
+                        <i class="bx bx-info-circle"></i>
+                        <h3>Why Join Us</h3>
+                        <p>Discover the benefits of being a part of our team:</p>
+                        <ul>
+                            <li>High-quality full-stack training: front-end, back-end, cloud & mobile</li>
+                            <li>Opportunities in real-time and freelance projects</li>
+                            <li>Great career growth and skill-building support</li>
+                            <li>Friendly work environment & remote options</li>
+                            <li>Continuous learning with leadership roles</li>
+                            <li>Diverse, inclusive culture with team-building events</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+<!-- ======= Apply Now Callout ======= -->
+<section class="apply-callout text-center py-5 bg-light" data-aos="zoom-in">
+    <div class="container">
+        <h3 class="text-primary mb-3">Ready to Take the Leap?</h3>
+        <p class="mb-4">We’re excited to meet passionate developers, thinkers, and doers. Whether you're just starting
+            or looking for your next big role — we're hiring!</p>
+        <a [routerLink]="'/contactus'" class="btn btn-success btn-lg shadow-sm">Apply Now</a>
+    </div>
+</section>
+
+
+    <!-- ======= Openings Grid ======= -->
+    <section class="openings-section container mb-5" data-aos="fade-up">
+        <div class="row row-cols-1 row-cols-md-2 g-4">
+            <div class="col" *ngFor="let opening of openings" data-aos="zoom-in" data-aos-delay="100">
+                <div class="card h-100 shadow-sm border-0">
+                    <div class="card-body">
+                        <h5 class="card-title text-primary">{{ opening.title }}</h5>
+                        <p class="card-subtitle mb-2 text-muted">{{ opening.location }} | {{ opening.type }}</p>
+                        <p class="card-text">{{ opening.description }}</p>
+                        <ul>
+                            <li *ngFor="let skill of opening.skills">
+                                <i class="bi bi-check-circle text-success me-2"></i>{{ skill }}
+                            </li>
+                        </ul>
+                        <a [routerLink]="'/contactus'" class="btn btn-outline-primary mt-3">Apply Now</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</main>

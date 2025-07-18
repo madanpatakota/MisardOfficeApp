@@ -1,0 +1,96 @@
+<header id="header" class="fixed-top">
+  <nav class="navbar navbar-expand-lg navbar-light">
+    <div class="container-fluid align-items-center">
+
+      <!-- LOGO + TEXT SECTION -->
+      <a class="navbar-brand d-flex align-items-center" routerLink="/">
+        <img src="../../../../assets/img/logo.ico" alt="Company Logo" class="img-fluid rounded-circle corner-logo" />
+        <div class="logo-text ms-2">
+          <div class="brand-name">Misard</div>
+          <div class="tagline">Software Solutions India Pvt Ltd</div>
+        </div>
+      </a>
+
+      <!-- TOGGLER FOR MOBILE -->
+      <button class="navbar-toggler" type="button" (click)="toggleNavbar()" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <!-- NAVIGATION LINKS -->
+      <div [class.collapse]="!navbarOpen" class="navbar-collapse justify-content-end" id="navbarNav">
+      <!-- <ul class="navbar-nav">
+        <li class="nav-item"><a class="nav-link active" aria-current="page" (click)="closeNavbar()" routerLink="/">Home</a>
+        </li>
+        <li class="nav-item"><a class="nav-link" (click)="closeNavbar()" [routerLink]="'about'">About Us</a></li>
+        <li class="nav-item"><a class="nav-link" (click)="closeNavbar()" [routerLink]="'services'">Training & Deployment</a>
+        </li>
+        <li class="nav-item"><a class="nav-link" (click)="closeNavbar()" [routerLink]="'technologies'">Technologies</a></li>
+        <li class="nav-item"><a class="nav-link" (click)="closeNavbar()" [routerLink]="'articles'">Blogs & Insights</a></li>
+        <li class="nav-item"><a class="nav-link" (click)="closeNavbar()" [routerLink]="'careers'">Careers</a></li>
+        <li class="nav-item"><a class="nav-link" (click)="closeNavbar()" [routerLink]="'faqs'">FAQs</a></li>
+        <li class="nav-item"><a class="nav-link" (click)="closeNavbar()" [routerLink]="'contactus'">Contact Us</a></li>
+      </ul> -->
+
+    <ul class="navbar-nav">
+    
+      <!-- Home -->
+      <li class="nav-item">
+        <a class="nav-link active" routerLink="/" (click)="closeNavbar()">Home</a>
+      </li>
+    
+      <!-- About -->
+      <li class="nav-item">
+        <a class="nav-link" [routerLink]="'about'" (click)="closeNavbar()">About Us</a>
+      </li>
+    
+    <!-- Offerings Dropdown -->
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="offeringsDropdown" role="button" data-bs-toggle="dropdown">
+          What We Offer
+        </a>
+        <ul class="dropdown-menu">
+          <li><a class="dropdown-item" [routerLink]="'../offers/trainingprogram'" (click)="closeNavbar()">Training Program</a></li>
+          <li><a class="dropdown-item" [routerLink]="'../offers/clientdeployment'" (click)="closeNavbar()">Client Deployment</a></li>
+          <li><a class="dropdown-item" [routerLink]="'../offers/companyprojects'" (click)="closeNavbar()">Company Projects</a></li>
+        </ul>
+      </li>
+    
+      <!-- Technologies -->
+      <li class="nav-item">
+        <a class="nav-link" [routerLink]="'technologies'" (click)="closeNavbar()">Technologies</a>
+      </li>
+    
+      <!-- Resources Dropdown -->
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="resourcesDropdown" role="button" data-bs-toggle="dropdown">
+          Resources
+        </a>
+        <ul class="dropdown-menu">
+          <li><a class="dropdown-item" [routerLink]="'../resources/blogs'" (click)="closeNavbar()">Blogs & Insights</a></li>
+          <li><a class="dropdown-item" [routerLink]="'../resources/faqs'" (click)="closeNavbar()">FAQs</a></li>
+        </ul>
+      </li>
+    
+      <!-- Careers Dropdown -->
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="careersDropdown" role="button" data-bs-toggle="dropdown">
+          Careers
+        </a>
+        <ul class="dropdown-menu">
+          <li><a class="dropdown-item" [routerLink]="'../carriers/joinus'" (click)="closeNavbar()">Join as Trainee</a></li>
+          <li><a class="dropdown-item" routerLink="../carriers/currentopenings" (click)="closeNavbar()">Openings</a></li>
+        </ul>
+      </li>
+    
+      <!-- Contact -->
+      <li class="nav-item">
+        <a class="nav-link" [routerLink]="'contactus'" (click)="closeNavbar()">Contact</a>
+      </li>
+    
+    </ul>
+
+
+      </div>
+    </div>
+  </nav>
+</header>

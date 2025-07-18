@@ -1,0 +1,126 @@
+<main id="main" class="join-trainee-section">
+
+    <!-- ======= Breadcrumbs ======= -->
+<section class="breadcrumbs text-white" data-aos="zoom-in">
+        <div class="container text-center">
+            <h2>Join as a Trainee</h2>
+            <p class="lead">
+                Kickstart your IT career with hands-on training, real projects, and deployment opportunities.
+            </p>
+        </div>
+    </section>
+
+    <!-- ======= Intro Section ======= -->
+    <section class="container py-5">
+        <div class="row">
+            <div class="col-lg-6">
+            <img src="/assets/img/joinatrainee.png" class="img-fluid rounded shadow" alt="Join Us" data-aos="fade-right"
+                data-aos-delay="100" />
+
+            </div>
+            <div class="col-lg-6">
+                <h3 class="mb-3 text-primary">How Misard Offers Career-Defining Opportunities</h3>
+                <ul class="list-group list-group-flush" data-aos="fade-left" data-aos-delay="200">
+
+                    <li class="list-group-item"><i class="bi bi-check-circle-fill text-success me-2"></i> 4-Month
+                        Full-Stack Training</li>
+                    <li class="list-group-item"><i class="bi bi-check-circle-fill text-success me-2"></i> Real-time
+                        Project Work & Code Reviews</li>
+                    <li class="list-group-item"><i class="bi bi-check-circle-fill text-success me-2"></i> Resume
+                        Building & Mock Interviews</li>
+                    <li class="list-group-item"><i class="bi bi-check-circle-fill text-success me-2"></i> Client or
+                        Internal Project Deployment</li>
+                    <li class="list-group-item"><i class="bi bi-check-circle-fill text-success me-2"></i> 100% Placement
+                        Assistance</li>
+                    <li class="list-group-item"><i class="bi bi-check-circle-fill text-success me-2"></i> Work on Live
+                        Projects</li>
+                    <li class="list-group-item"><i class="bi bi-check-circle-fill text-success me-2"></i> Work with
+                        Experienced Developers</li>
+                    <li class="list-group-item"><i class="bi bi-check-circle-fill text-success me-2"></i> Soft Skills &
+                        Communication
+                        Training</li>
+                    <li class="list-group-item"><i class="bi bi-check-circle-fill text-success me-2"></i> Certification
+                        & Post-Deployment
+                        Mentorship</li>
+                    <li class="list-group-item"><i class="bi bi-check-circle-fill text-success me-2"></i> Git, Azure,
+                        and CI/CD Pipeline
+                        Hands-on Practice</li>
+                    <li class="list-group-item"><i class="bi bi-check-circle-fill text-success me-2"></i> Daily Standups
+                        & Agile-Based
+                        Sprint Planning</li>
+                    <li class="list-group-item"><i class="bi bi-check-circle-fill text-success me-2"></i> Direct Access
+                        to Real-Time Mentors
+                        & Code Reviewers</li>
+                    <li class="list-group-item"><i class="bi bi-check-circle-fill text-success me-2"></i> Dedicated
+                        Support for Internships
+                        & Freelance Projects</li>
+                    <li class="list-group-item"><i class="bi bi-check-circle-fill text-success me-2"></i> Exposure to
+                        Enterprise-Grade Tools
+                        & Workflows</li>
+
+
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- ======= Form Section ======= -->
+    <section class="container mb-5">
+    <div class="card p-4 shadow-sm" data-aos="fade-up" data-aos-delay="150">
+
+            <h4 class="mb-3 text-center text-primary">Apply for Training</h4>
+        <form (ngSubmit)="onSubmit()" #traineeForm="ngForm">
+        
+            <div class="mb-3">
+                <label for="fullName" class="form-label">Full Name <span class="text-danger">*</span></label>
+                <input type="text" id="fullName" class="form-control" name="fullName" required [(ngModel)]="formData.fullName"
+                    #fullName="ngModel">
+                <div *ngIf="fullName.invalid && fullName.touched" class="text-danger">Full name is required</div>
+            </div>
+        
+            <div class="mb-3">
+                <label for="email" class="form-label">Email / Phone <span class="text-danger">*</span></label>
+                <input type="text" id="email" class="form-control" name="email" required [(ngModel)]="formData.email"
+                    #email="ngModel">
+                <div *ngIf="email.invalid && email.touched" class="text-danger">Email / Phone is required</div>
+            </div>
+        
+            <div class="mb-3">
+                <label for="education" class="form-label">Educational Background <span class="text-danger">*</span></label>
+                <input type="text" id="education" class="form-control" name="education" required
+                    [(ngModel)]="formData.education" #education="ngModel">
+                <div *ngIf="education.invalid && education.touched" class="text-danger">Education is required</div>
+            </div>
+        
+            <div class="mb-3">
+                <label for="skillset" class="form-label">Skillset <span class="text-danger">*</span></label>
+                <input type="text" id="skillset" class="form-control" name="skillset" required [(ngModel)]="formData.skillset"
+                    #skillset="ngModel">
+                <div *ngIf="skillset.invalid && skillset.touched" class="text-danger">Skillset is required</div>
+            </div>
+        
+            <div class="mb-3">
+                <label for="resume" class="form-label">Upload Resume <span class="text-danger">*</span></label>
+                <input type="file" id="resume" class="form-control" name="resume" required (change)="onFileChange($event)"
+                    #resume="ngModel" ngModel>
+                <div *ngIf="resume.invalid && resume.touched" class="text-danger">Resume is required</div>
+            </div>
+        
+            <div class="mb-3">
+                <label for="startDate" class="form-label">Preferred Start Date</label>
+                <input type="date" id="startDate" class="form-control" name="startDate" [(ngModel)]="formData.startDate">
+            </div>
+        
+            <div class="text-center">
+                <button class="btn btn-primary" type="submit" [disabled]="!traineeForm.valid">Submit Application</button>
+            </div>
+        
+            <div *ngIf="submitted" class="alert alert-success mt-4" role="alert">
+                ✅ Application submitted successfully!
+            </div>
+        </form>
+
+        </div>
+    </section>
+
+</main>

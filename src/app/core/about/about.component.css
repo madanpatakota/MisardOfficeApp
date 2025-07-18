@@ -1,0 +1,113 @@
+.about-section .breadcrumbs {
+  padding: 40px 20px;
+  border-radius: 8px;
+  background-color: #144164 !important;
+  color: white;
+}
+
+.counters span {
+  font-size: 42px;
+  font-weight: 800;
+  color: #144164;
+}
+
+.about ul li {
+  transition: all 0.3s ease;
+  padding: 8px 0;
+}
+
+.about ul li:hover {
+  background-color: #f4f9fd;
+  transform: translateX(5px);
+  border-left: 3px solid #144164;
+}
+
+.counters .text-center:hover {
+  /* background-color: #f4f9fd;
+  transform: translateX(5px); */
+  border-bottom: 3px solid #144164;
+}
+
+
+
+@media (max-width: 768px) {
+  .about .content {
+    padding: 20px 10px;
+    background: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+    margin-top: 20px;
+  }
+
+  .about img {
+    margin-bottom: 20px;
+  }
+
+  .training-section {
+    padding: 40px 10px;
+  }
+
+  .training-img {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+}
+
+.training-section {
+  padding: 60px 20px;
+}
+
+.training-img {
+  transition: transform 0.4s ease-in-out;
+  border-radius: 12px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+.training-img:hover {
+  transform: scale(1.05);
+}
+
+.section-heading {
+  font-size: 22px;
+  font-weight: 600;
+  color: #144164;
+  margin-bottom: 20px;
+}
+
+.list-group-item {
+  border: none;
+  padding: 10px 0;
+  transition: background-color 0.3s ease;
+}
+
+.list-group-item:hover {
+  background-color: rgba(20, 65, 100, 0.05);
+}
+.cta-box {
+  border: 2px dashed #144164;
+  border-radius: 12px;
+  background-color: #f9fcff;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.cta-box:hover {
+  transform: scale(1.01);
+  box-shadow: 0 10px 20px rgba(20, 65, 100, 0.1);
+}
+
+.cta-link {
+  color: #144164;
+  text-decoration: underline;
+  font-weight: 600;
+  transition: color 0.3s ease, text-shadow 0.3s ease;
+}
+
+.cta-link:hover {
+  color: #0d2e4f;
+  text-shadow: 0 1px 2px rgba(20, 65, 100, 0.2);
+}
+
+.about img:hover {
+  transform: scale(1.05);
+  transition: transform 0.3s ease;
+}

@@ -1,0 +1,150 @@
+<main id="main" class="blogs-section">
+  <!-- ======= Breadcrumbs ======= -->
+  <section class="breadcrumbs" data-aos="fade-in">
+    <div class="container text-center">
+      <h2>Blogs & Insights</h2>
+      <p class="lead">Stay updated with the latest trends, resources, and tools in software development and IT careers.
+        Our blogs and articles are designed to help you navigate the tech landscape, whether you're a fresher or an experienced professional.
+     Explore our curated content, including tutorials, project ideas, and industry insights, to enhance your skills and knowledge.</p>
+      <p  class="lead">Whether you're looking for coding tips, interview preparation, or career advice, we've got you covered.</p>
+  
+    </div>
+  </section>
+
+  <!-- ======= Articles/Blogs Section ======= -->
+  <section id="blogs" class="blogs py-5">
+    <div class="container">
+      <div class="row g-4">
+
+        <!-- GitHub Projects -->
+        <div class="col-lg-4 col-md-6" data-aos="fade-up">
+          <div class="card h-100 shadow-sm text-center" data-aos="zoom-in" data-aos-delay="100">
+            <img src="https://img.icons8.com/material-rounded/96/000000/github.png" class="card-img-top p-4 mx-auto"
+              alt="GitHub">
+            <div class="card-body">
+              <h5 class="card-title">GitHub Projects for Freshers</h5>
+              <p class="card-text">Browse practical projects for learning and contribution. Start building your
+                portfolio now.</p>
+              <a href="https://github.com/madanpatakota" target="_blank" class="btn btn-outline-dark">View on GitHub</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- YouTube Channel -->
+        <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
+          <div class="card h-100 shadow-sm text-center" >
+            <img src="https://img.icons8.com/material-rounded/96/ff0000/youtube-play.png"
+              class="card-img-top p-4 mx-auto" alt="YouTube">
+            <div class="card-body">
+              <h5 class="card-title">Learn on YouTube</h5>
+              <p class="card-text">Watch full-stack tutorials, interview prep series, and live coding sessions.</p>
+              <a href="https://www.youtube.com/@madan4422" target="_blank" class="btn btn-danger">Watch Now</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Misard Courses -->
+        <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="200">
+          <div class="card h-100 shadow-sm text-center" data-aos="zoom-in" data-aos-delay="100">
+            <img
+              src="https://azurecomcdn.azureedge.net/cvt-726d5a30aa52b1a5a6c7808dc25a9f6114ea62aa30d63c5eb8246d9be37e8f5b/images/shared/social/azure-icon-250x250.png"
+              class="card-img-top p-4 mx-auto" alt="Courses">
+            <div class="card-body">
+              <h5 class="card-title">Misard Courses Platform</h5>
+              <p class="card-text">Access beginner-to-advanced content, track your progress, and get certified.</p>
+              <a href="https://misardcourses.azurewebsites.net/" target="_blank" class="btn btn-primary">Visit
+                Platform</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- PDF Downloads -->
+      <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="300">
+        <div class="card h-100 shadow-sm text-center" data-aos="zoom-in" data-aos-delay="100">
+          <img src="https://img.icons8.com/ios-filled/96/pdf-2.png" class="card-img-top p-4 mx-auto" alt="PDF" />
+          <div class="card-body">
+            <h5 class="card-title">Download Cheat Sheets & Notes</h5>
+            <p class="card-text">
+              Instantly download hand-prepared guides, notes, and cheat sheets for Angular, .NET, and SQL.
+            </p>
+            <button (click)="showAlert = true" class="btn btn-success">Download PDF</button>
+      
+            <!-- Bootstrap Alert -->
+            <div *ngIf="showAlert" class="alert alert-warning alert-dismissible fade show mt-3" role="alert">
+              <strong>Note:</strong> Please connect with our support team to access the PDF.
+              <button type="button" class="btn-close" aria-label="Close" (click)="showAlert = false"></button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+        <!-- Tech Podcast -->
+        <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="400">
+          <div class="card h-100 shadow-sm text-center" data-aos="zoom-in" data-aos-delay="100">
+            <img src="https://img.icons8.com/color/96/microphone.png" class="card-img-top p-4 mx-auto" alt="Podcast">
+            <div class="card-body">
+              <h5 class="card-title">Podcast: Code & Coffee</h5>
+              <p class="card-text">Listen to weekly insights on new tech stacks, coding tips, and interview experiences.</p>
+        
+              <!-- Button to trigger alert -->
+              <button (click)="showPodcastAlert = true" class="btn btn-outline-secondary">Listen Now</button>
+        
+              <!-- Bootstrap Alert -->
+              <div *ngIf="showPodcastAlert" class="alert alert-info alert-dismissible fade show mt-3" role="alert">
+                <strong>Coming Soon!</strong> Our Podcast will be available shortly. Stay tuned!
+                <button type="button" class="btn-close" aria-label="Close" (click)="showPodcastAlert = false"></button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+      </div>
+
+      <div class="row mt-5 text-center content-highlights" data-aos="fade-up">
+        <div class="col-lg-10 offset-lg-1">
+          <h4 class="mb-3">Why Choose Our Content?</h4>
+          <p class="text-muted mb-4">
+            Our GitHub projects, YouTube tutorials, and PDF materials are hand-crafted for freshers and early
+            professionals.
+            Learn real-world code, solve real interview questions, and accelerate your journey to client deployment.
+          </p>
+
+          <div class="rating-section mb-4">
+            <span class="rating-stars">
+              <i class="bi bi-star-fill text-warning"></i>
+              <i class="bi bi-star-fill text-warning"></i>
+              <i class="bi bi-star-fill text-warning"></i>
+              <i class="bi bi-star-fill text-warning"></i>
+              <i class="bi bi-star-half text-warning"></i>
+            </span>
+            <span class="rating-text">4.8 / 5 from 200+ learners</span>
+          </div>
+
+          <div class="row justify-content-center">
+            <div class="col-md-6 mb-4">
+              <div class="testimonial-box p-3 shadow-sm rounded text-center">
+                <p class="mb-2">
+                  <i class="bi bi-quote quote-open"></i>
+                  {{ testimonials[currentIndex].message }}
+                  <i class="bi bi-quote quote-close"></i>
+                </p>
+                <small class="text-muted">— {{ testimonials[currentIndex].author }}</small>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+
+    </div>
+  </section>
+
+  <!-- ======= CTA ======= -->
+  <section class="text-center py-4 bg-light">
+    <p class="mb-2">Want to contribute or collaborate?</p>
+    <a [routerLink]="'../../contactus'" class="btn btn-primary">Connect With Us</a>
+  </section>
+</main>

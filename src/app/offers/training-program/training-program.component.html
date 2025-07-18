@@ -1,0 +1,83 @@
+<main id="main" class="training-program-section">
+    <!-- ======= Breadcrumbs Section ======= -->
+    <div class="breadcrumbs"   style="background-color: #144164;" data-aos="zoom-in">
+        <div class="container">
+            <h2>Our Training Program</h2>
+            <p class="lead">
+                Kickstart your IT career with Misard’s hands-on, industry-ready training program designed to make you
+                deployable from Day 1.
+            </p>
+            <p>
+                Our comprehensive 4-month full-stack curriculum covers everything from core programming to cloud
+                deployments, guided by real-time trainers and daily practical tasks. You’ll engage in mock interviews,
+                real-time projects, resume building, and soft skill sessions — all crafted to prepare you for real-world
+                corporate expectations.
+            </p>
+            <p>
+                Whether you're a fresher or a recent graduate, Misard transforms you into a confident developer ready to
+                work on client or internal enterprise-grade projects. This program is your launchpad to becoming a
+                job-ready IT professional.
+            </p>
+        </div>
+    </div>
+    <!-- End Breadcrumbs -->
+
+    <!-- ======= Training Program Section ======= -->
+    <div class="training-program container mt-5 mb-5" data-aos="fade-up">
+    <section class="training-section" data-aos="fade-up">
+        <div class="container">
+            <div class="row mt-4 align-items-center">
+    
+                <!-- Left Image -->
+                <div class="col-lg-6 mb-4 mb-lg-0" data-aos="zoom-in-right">
+                    <img src="/assets/img/training.png" alt="Training Image"
+                        class="img-fluid rounded shadow-sm training-img" />
+                </div>
+    
+                <!-- Right Content -->
+                <div class="col-lg-6" data-aos="fade-left">
+                    <h4 class="section-heading">Program Highlights</h4>
+                    <ul class="list-group list-group-flush">
+                        <li *ngFor="let item of highlights; let i = index" class="list-group-item d-flex align-items-start"
+                            [attr.data-aos]="'fade-up'" [attr.data-aos-delay]="i * 100">
+                            <i class="bi bi-check-circle-fill text-success me-2"></i>
+                            <span>{{ item }}</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+        <div class="row mt-5 text-center">
+            <div class="col">
+                <h5>Technologies We Train</h5>
+                <p class="tech-line">
+                    Angular, React, .NET Core, Node.js, SQL Server, MongoDB, Azure, AWS, GitHub, CI/CD, Agile, and more.
+                </p>
+            </div>
+        </div>
+
+        <div class="row mt-4 text-center">
+            <div class="col">
+                <a [routerLink]="'../../carriers/joinus'" class="btn btn-primary btn-lg px-4 shadow-sm">Join Our Next Batch</a>
+            </div>
+        </div>
+
+        <div class="row mt-5 justify-content-center" data-aos="fade-up">
+            <div class="col-lg-10 col-md-12">
+                <div class="cta-box text-center p-4 shadow-sm">
+                    <p class="fw-bold mb-2 fs-5 text-dark">
+                        📘 For complete course curriculum and module-wise topics,
+                        <a href="https://misardacademy.com" target="_blank" class="cta-link">
+                            click here to explore our detailed training site
+                        </a>.
+                    </p>
+                </div>
+            </div>
+        </div>
+
+
+    </div>
+    <!-- End Training Program -->
+</main>

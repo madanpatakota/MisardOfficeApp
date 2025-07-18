@@ -1,0 +1,32 @@
+.contact-section .info-box {
+  background: #f8f9fa;
+  border-left: 5px solid #144164;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.contact-section .info-box:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
+}
+
+.contact-section form .form-control {
+  border-radius: 8px;
+  box-shadow: none;
+}
+
+.contact-section form .btn {
+  background-color: #144164;
+  border: none;
+  transition: background-color 0.3s ease;
+}
+
+.contact-section form .btn:hover {
+  background-color: #0b3055;
+}
+
+.contact-section .breadcrumbs {
+  padding: 40px 20px;
+  border-radius: 8px;
+  background-color: #144164 !important;
+  color: white;
+}

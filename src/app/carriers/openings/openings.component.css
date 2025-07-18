@@ -1,0 +1,87 @@
+.breadcrumbs {
+  background-color: #144164 !important;
+  color: white;
+  padding: 40px 20px;
+  border-radius: 10px;
+  margin-bottom: 40px;
+  text-align: center;
+}
+.breadcrumbs h2,
+.breadcrumbs p {
+  color: white;
+}
+
+.section-title h2 {
+  font-weight: 700;
+  color: #144164;
+}
+.section-title p {
+  color: #555;
+}
+
+/* Info Box Styles */
+.info-box {
+  background: #fff;
+  padding: 25px;
+  border-radius: 10px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.04);
+  transition: all 0.3s ease;
+}
+.info-box:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.08);
+}
+
+/* Openings Card Grid */
+.openings-section .card {
+  border-radius: 12px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.openings-section .card:hover {
+  transform: scale(1.02);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+}
+.openings-section .card-title {
+  font-size: 20px;
+  font-weight: 600;
+}
+.openings-section .card-subtitle {
+  font-size: 14px;
+}
+.openings-section .card-text {
+  font-size: 15px;
+  color: #333;
+}
+.openings-section ul {
+  margin-top: 10px;
+  padding-left: 20px;
+}
+.openings-section ul li {
+  font-size: 14px;
+  margin-bottom: 6px;
+}
+
+
+.apply-callout {
+  background: #f8f9fa;
+  border-top: 1px solid #e0e0e0;
+}
+
+.apply-callout h3 {
+  font-weight: 700;
+  color: #144164;
+}
+
+.apply-callout p {
+  font-size: 16px;
+  color: #555;
+}
+
+.apply-callout .btn-success {
+  background-color: #144164;
+  border: none;
+}
+
+.apply-callout .btn-success:hover {
+  background-color: #0e304d;
+}
