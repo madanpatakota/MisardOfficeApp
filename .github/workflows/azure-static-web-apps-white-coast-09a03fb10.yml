@@ -21,18 +21,6 @@ jobs:
           submodules: true
           lfs: false
 
-      - name: Install OIDC Client from Core Package
-        run: npm install @actions/core@1.6.0 @actions/http-client
-
-      - name: Get Id Token
-        uses: actions/github-script@v6
-        id: idtoken
-        with:
-          script: |
-            const coredemo = require('@actions/core');
-            return await coredemo.getIDToken();
-          result-encoding: string
-
       - name: Use Node 20
         uses: actions/setup-node@v4
         with:
@@ -40,7 +28,10 @@ jobs:
           cache: 'npm'
 
       - name: Install & Build (Angular prod)
-        run: npm ci && npm run build -- --configuration=production --output-path=dist/www
+        run: npm ci && npm run build -- --configuration=production
+
+      - name: Copy SWA config into output
+        run: cp staticwebapp.config.json dist/misard-office-app/ || true
 
       - name: Build And Deploy
         id: builddeploy
@@ -48,9 +39,9 @@ jobs:
         with:
           azure_static_web_apps_api_token: ${{ secrets.AZURE_STATIC_WEB_APPS_API_TOKEN_WHITE_COAST_09A03FB10 }}
           action: upload
-          app_location: "/"                     # repo root
-          api_location: ""                      # no API
-          output_location: "dist/www"  # ✅ include /browser
+          app_location: "/"
+          api_location: ""
+          output_location: "dist/misard-office-app"
           github_id_token: ${{ steps.idtoken.outputs.result }}
 
   close_pull_request_job:
