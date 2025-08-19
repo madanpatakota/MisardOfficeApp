@@ -40,7 +40,7 @@ jobs:
           cache: 'npm'
 
       - name: Install & Build (Angular prod)
-        run: npm ci && npm run build -- --configuration=production
+        run: npm ci && npm run build -- --configuration=production --output-path=dist/www
 
       - name: Build And Deploy
         id: builddeploy
@@ -50,7 +50,7 @@ jobs:
           action: upload
           app_location: "/"                     # repo root
           api_location: ""                      # no API
-          output_location: "dist/misard-office-app/browser"  # ✅ include /browser
+          output_location: "dist/www"  # ✅ include /browser
           github_id_token: ${{ steps.idtoken.outputs.result }}
 
   close_pull_request_job:
